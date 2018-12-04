@@ -1,12 +1,12 @@
 # Tor
 Tor Service
-Install systemd unit file for tor.service in /etc/systemd/system/tor.service
+Install systemd unit file for tor.service in /etc/systemd/system/tor.service<br />
 
-[Unit]
-Description=Tor Proxy Service
-After=network.target
+[Unit]<br />
+Description=Tor Proxy Service<br />
+After=network.target<br />
 
-[Service]"
+[Service]
 User=root
 Type=simple
 ExecStart=/usr/bin/tor -f /etc/tor/torrc
