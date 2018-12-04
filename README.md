@@ -1,21 +1,21 @@
 # Tor
-Tor Service
-Install systemd unit file for tor.service in /etc/systemd/system/tor.service
+Tor Service"\n"
+Install systemd unit file for tor.service in /etc/systemd/system/tor.service "\n"
 
-[Unit]
-Description=Tor Proxy Service
-After=network.target
+[Unit]"\n"
+Description=Tor Proxy Service"\n"
+After=network.target"\n"
 
-[Service]
-User=root
-Type=simple
-ExecStart=/usr/bin/tor -f /etc/tor/torrc
-ExecReload=/usr/bin/kill -HUP $MAINPID
-KillSignal=SIGINT
-LimitNOFILE=8192
-PrivateDevices=yes
-Restart=always
+[Service]"\n"
+User=root"\n"
+Type=simple"\n"
+ExecStart=/usr/bin/tor -f /etc/tor/torrc"\n"
+ExecReload=/usr/bin/kill -HUP $MAINPID"\n"
+KillSignal=SIGINT"\n"
+LimitNOFILE=8192"\n"
+PrivateDevices=yes"\n"
+Restart=always"\n"
 
-[Install]
-WantedBy=multi-user.target
+[Install]"\n"
+WantedBy=multi-user.target"\n"
 
